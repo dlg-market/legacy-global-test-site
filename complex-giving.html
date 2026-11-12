@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Complex Giving | Legacy Global</title>
+<meta name="description" content="Gifts of business interests, real estate and other non-cash assets.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<style id="dc-cloak">body{visibility:hidden;background:#1f2622}</style>
+<noscript><style>body{visibility:visible !important}</style></noscript>
+<script src="assets/dc-lite.js" defer></script>
+</head>
+<body>
+<template id="dc-page">
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+body{margin:0;background:#1f2622}
+</style>
+</helmet>
+<div style="font-family: 'IBM Plex Sans', system-ui, sans-serif; color: #121513">
+<dc-import name="ServicePage" slug="complex" hint-size="100%,7600px"></dc-import>
+</div>
+</template>
+<script type="text/x-dc" data-for="page" data-props='{"$preview":{"width":1440,"height":7600}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+<template id="dc-ServicePage">
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+body{margin:0;background:#1f2622}
+a{color:#121513;text-decoration:none}a:hover{color:#000000}
+</style>
+</helmet>
+<div style="background: #b3b9b4; color: #121513; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 16px; line-height: 1.6">
+
+<dc-import name="Header" current="services" hint-size="100%,70px"></dc-import>
+
+<section style="background-color: #1f2622; background-image: linear-gradient(rgba(236,235,226,0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(236,235,226,0.045) 1px, transparent 1px); background-size: 48px 48px; color: #ecebe2">
+<div style="max-width: 1180px; margin: 0 auto; padding: clamp(40px, 6vw, 88px) clamp(20px, 4vw, 48px) clamp(56px, 7vw, 100px); display: flex; flex-wrap: wrap; gap: 44px 56px">
+<div style="flex: 1 1 480px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #bfc5bb"><a href="services.html" style="color: #bfc5bb">SERVICES</a> / <span style="color: #7fc4c2">{{s.n}}</span></p>
+<h1 style="margin: 20px 0 0; font-family: 'Archivo', sans-serif; font-stretch: 108%; font-weight: 600; font-size: clamp(2.6rem, 6.2vw, 5.4rem); line-height: 0.96; letter-spacing: -0.035em">{{s.title}}</h1>
+<p style="display: inline-flex; align-items: center; gap: 10px; margin: 22px 0 0; padding: 7px 14px; border: 1px solid #4a554e; border-radius: 999px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #bfc5bb"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: #7fc4c2"></span>{{s.entity}}</p>
+<p style="margin: 24px 0 0; max-width: 560px; font-size: clamp(1.05rem, 1.5vw, 1.22rem); line-height: 1.55; color: #c8ccc4">{{s.lede}}</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px">
+<a href="contact.html" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 22px; border-radius: 6px; background: #2A7173; color: #ffffff; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; box-shadow: inset 0 -4px 0 rgba(0,0,0,0.3)">{{s.cta}}</a>
+<a href="gateway.html" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 22px; border-radius: 6px; background: #c9cec9; color: #121513; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; box-shadow: inset 0 -4px 0 rgba(0,0,0,0.18)">EXISTING CLIENTS</a>
+</div>
+</div>
+<div style="flex: 1 1 380px; max-width: 500px; align-self: flex-start; border-radius: 10px; background: #2c3530; box-shadow: 0 0 0 1px #3d4741, 8px 8px 0 #0d100e">
+<div style="display: flex; justify-content: space-between; gap: 12px; padding: 12px 18px; border-bottom: 1px solid #3d4741; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: #bfc5bb"><span>SPEC SHEET</span><span style="color: #7fc4c2">{{s.code}}</span></div>
+<sc-for list="{{s.specs}}" as="sp" hint-placeholder-count="6">
+<div style="display: flex; flex-wrap: wrap; gap: 4px 16px; padding: 13px 18px; border-bottom: 1px solid #343f39">
+<span style="flex: 0 0 120px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.08em; color: #7fc4c2; padding-top: 3px">{{sp.k}}</span>
+<span style="flex: 1 1 200px; font-size: 14px; line-height: 1.5; color: #ecebe2">{{sp.v}}</span>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section style="max-width: 1180px; margin: 0 auto; padding: clamp(72px, 9vw, 120px) clamp(20px, 4vw, 48px)">
+<div style="display: flex; align-items: center; gap: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em"><span style="color: #164a4c">01</span><span>WHAT IT IS</span><span aria-hidden="true" style="flex: 1; height: 1px; background: #121513"></span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 36px 64px; margin-top: 30px">
+<div style="flex: 3 1 420px">
+<h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 108%; font-weight: 600; font-size: clamp(1.9rem, 3.8vw, 3rem); line-height: 1.04; letter-spacing: -0.03em">{{s.whatTitle}}</h2>
+<sc-for list="{{s.what}}" as="p" hint-placeholder-count="2">
+<p style="margin: 20px 0 0; max-width: 640px; font-size: 17px; line-height: 1.7; color: #1c201d">{{p}}</p>
+</sc-for>
+</div>
+<aside style="flex: 2 1 300px; align-self: flex-start; border: 1.5px solid #121513; background: #c9cec9; box-shadow: 6px 6px 0 #121513">
+<div style="padding: 10px 18px; background: #343a37; color: #ecebe2; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em">{{s.noteTitle}}</div>
+<p style="margin: 0; padding: 18px 18px 22px; font-size: 15px; line-height: 1.6; color: #1c201d">{{s.note}}</p>
+</aside>
+</div>
+</section>
+
+<section style="background-color: #a6aca8; background-image: linear-gradient(rgba(18,21,19,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(18,21,19,0.06) 1px, transparent 1px); background-size: 40px 40px">
+<div style="max-width: 1180px; margin: 0 auto; padding: clamp(72px, 9vw, 120px) clamp(20px, 4vw, 48px)">
+<div style="display: flex; align-items: center; gap: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em"><span style="color: #164a4c">02</span><span>WHY PEOPLE USE IT</span><span aria-hidden="true" style="flex: 1; height: 1px; background: #121513"></span></div>
+<h2 style="margin: 26px 0 0; max-width: 760px; font-family: 'Archivo', sans-serif; font-stretch: 108%; font-weight: 600; font-size: clamp(1.9rem, 3.8vw, 3rem); line-height: 1.04; letter-spacing: -0.03em">{{s.benefitsTitle}}</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 22px; margin-top: clamp(32px, 4vw, 48px)">
+<sc-for list="{{s.benefits}}" as="b" hint-placeholder-count="6">
+<div style="display: flex; flex-direction: column; gap: 12px; padding: 22px 20px 24px; border: 1.5px solid #121513; background: #d3d7d3; box-shadow: 6px 6px 0 #121513">
+<span aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; border-radius: 6px; background: #343a37; color: #ecebe2; font-family: 'IBM Plex Mono', monospace; font-size: 12px; box-shadow: inset 0 -3px 0 rgba(0,0,0,0.35)">{{b.n}}</span>
+<h3 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 106%; font-weight: 600; font-size: 1.25rem; letter-spacing: -0.02em">{{b.t}}</h3>
+<p style="margin: 0; font-size: 15px; color: #2e3330">{{b.d}}</p>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section style="max-width: 1180px; margin: 0 auto; padding: clamp(72px, 9vw, 120px) clamp(20px, 4vw, 48px)">
+<div style="display: flex; align-items: center; gap: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em"><span style="color: #164a4c">03</span><span>{{s.typesLabel}}</span><span aria-hidden="true" style="flex: 1; height: 1px; background: #121513"></span></div>
+<h2 style="margin: 26px 0 0; max-width: 760px; font-family: 'Archivo', sans-serif; font-stretch: 108%; font-weight: 600; font-size: clamp(1.9rem, 3.8vw, 3rem); line-height: 1.04; letter-spacing: -0.03em">{{s.typesTitle}}</h2>
+<div style="margin-top: clamp(32px, 4vw, 48px); border: 1.5px solid #121513; background: #c9cec9; box-shadow: 6px 6px 0 #121513">
+<sc-for list="{{s.types}}" as="t" hint-placeholder-count="5">
+<div style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 20px 22px; border-bottom: 1px solid #969c98">
+<div style="flex: 1 1 240px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #164a4c">{{t.code}}</div>
+<h3 style="margin: 4px 0 0; font-family: 'Archivo', sans-serif; font-stretch: 106%; font-weight: 600; font-size: 1.2rem; letter-spacing: -0.015em">{{t.name}}</h3>
+</div>
+<p style="margin: 0; flex: 2 1 380px; font-size: 15px; color: #2e3330">{{t.d}}</p>
+</div>
+</sc-for>
+</div>
+<sc-if value="{{s.hasCautions}}" hint-placeholder-val="{{ false }}">
+<div style="margin-top: 36px; border: 1.5px solid #121513; background: #d3d7d3; box-shadow: 6px 6px 0 #b23a30">
+<div style="padding: 10px 18px; background: #b23a30; color: #ffffff; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em">RISKS TO WEIGH</div>
+<ul style="margin: 0; padding: 18px 22px 20px 40px; font-size: 15px; line-height: 1.7; color: #1c201d">
+<sc-for list="{{s.cautions}}" as="c" hint-placeholder-count="3"><li>{{c}}</li></sc-for>
+</ul>
+</div>
+</sc-if>
+</section>
+
+<section style="background: #1f2622; color: #ecebe2">
+<div style="max-width: 1180px; margin: 0 auto; padding: clamp(72px, 9vw, 120px) clamp(20px, 4vw, 48px)">
+<div style="display: flex; align-items: center; gap: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em"><span style="color: #7fc4c2">04</span><span>WHY LEGACY</span><span aria-hidden="true" style="flex: 1; height: 1px; background: #4a554e"></span></div>
+<h2 style="margin: 26px 0 0; max-width: 760px; font-family: 'Archivo', sans-serif; font-stretch: 108%; font-weight: 600; font-size: clamp(1.9rem, 3.8vw, 3rem); line-height: 1.04; letter-spacing: -0.03em">{{s.whyTitle}}</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: clamp(32px, 4vw, 48px)">
+<sc-for list="{{s.why}}" as="w" hint-placeholder-count="4">
+<div style="padding: 22px 20px 24px; border: 1px solid #4a554e; border-radius: 8px; background: #26302b">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #7fc4c2">{{w.k}}</div>
+<h3 style="margin: 10px 0 0; font-family: 'Archivo', sans-serif; font-stretch: 106%; font-weight: 600; font-size: 1.3rem; letter-spacing: -0.02em">{{w.t}}</h3>
+<p style="margin: 10px 0 0; font-size: 15px; color: #c8ccc4">{{w.d}}</p>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 24px; margin-top: 40px; padding: 20px 22px; border: 1px dashed #4a554e; border-radius: 8px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: #7fc4c2">BEST FOR</span>
+<span style="flex: 1 1 400px; font-size: 16px; color: #ecebe2">{{s.best}}</span>
+</div>
+</div>
+</section>
+
+<section style="max-width: 1180px; margin: 0 auto; padding: clamp(64px, 8vw, 104px) clamp(20px, 4vw, 48px)">
+<div style="display: flex; align-items: center; gap: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em"><span style="color: #164a4c">05</span><span>OTHER WAYS TO GIVE</span><span aria-hidden="true" style="flex: 1; height: 1px; background: #121513"></span></div>
+<nav aria-label="Other services" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; margin-top: 28px">
+<sc-for list="{{others}}" as="o" hint-placeholder-count="4">
+<a href="{{o.href}}" style="display: flex; flex-direction: column; justify-content: space-between; gap: 10px; min-height: 92px; padding: 12px 14px 16px; border-radius: 7px; background: #c9cec9; box-shadow: inset 0 -6px 0 rgba(0,0,0,0.16); box-sizing: border-box"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.08em; color: #2e3330">{{o.n}}</span><span style="font-family: 'Archivo', sans-serif; font-stretch: 106%; font-weight: 600; font-size: 1.1rem; letter-spacing: -0.015em">{{o.title}}</span></a>
+</sc-for>
+</nav>
+</section>
+
+<section style="background-color: #1f2622; background-image: linear-gradient(rgba(236,235,226,0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(236,235,226,0.045) 1px, transparent 1px); background-size: 48px 48px; color: #ecebe2">
+<div style="max-width: 1180px; margin: 0 auto; padding: clamp(72px, 9vw, 128px) clamp(20px, 4vw, 48px) clamp(56px, 7vw, 88px)">
+<h2 style="margin: 0; max-width: 820px; font-family: 'Archivo', sans-serif; font-stretch: 108%; font-weight: 600; font-size: clamp(2.2rem, 5.4vw, 4.4rem); line-height: 0.98; letter-spacing: -0.035em">{{s.closer}}</h2>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; margin-top: 32px">
+<a href="contact.html" style="display: inline-flex; align-items: center; min-height: 54px; padding: 0 24px; border-radius: 6px; background: #b23a30; color: #ffffff; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; box-shadow: inset 0 -4px 0 rgba(0,0,0,0.3)">BOOK A CONSULTATION</a>
+<a href="tel:+16027041000" style="display: inline-flex; align-items: center; min-height: 44px; font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #ecebe2">+1 602-704-1000</a>
+</div>
+<p style="margin: 44px 0 0; max-width: 760px; font-size: 13px; line-height: 1.6; color: #bfc5bb">This page is general information, not tax, legal or investment advice. Tax results depend on your circumstances and current law. Talk with your own attorney, CPA or financial advisor before making a gift.</p>
+</div>
+</section>
+
+<dc-import name="Footer" hint-size="100%,380px"></dc-import>
+
+</div>
+</template>
+<script type="text/x-dc" data-for="ServicePage" data-props='{"slug":{"editor":"enum","options":["daf","fsp","complex","split","premium"],"default":"daf"},"$preview":{"width":1440,"height":7600}}'>
+class Component extends DCLogic {
+renderVals() {
+const slug = this.props.slug ?? 'daf';
+const all = {
+daf: {
+n: '01', code: 'DAF', title: 'Donor-Advised Funds', href: 'donor-advised-funds.html',
+entity: 'SPONSORED BY LEGACY GLOBAL FOUNDATION',
+lede: 'A charitable giving account held at Legacy Global Foundation. Give when it makes sense for you, take the deduction in that year, and recommend grants over time.',
+cta: 'TALK TO US ABOUT A DAF',
+specs: [
+{ k: 'OWNER', v: 'Legacy Global Foundation, as the sponsoring charity' },
+{ k: 'YOUR ROLE', v: 'Advisory privileges over grants and investments' },
+{ k: 'FUNDING', v: 'Your gifts, or gifts from other people and organizations' },
+{ k: 'INVESTING', v: 'Assets can be invested and grow tax free, as allowed by law' },
+{ k: 'GRANTS', v: 'To qualified charities you recommend' },
+{ k: 'SUCCESSION', v: 'Can pass to successor advisors, with no required sunset' }
+],
+whatTitle: 'Foundation-style giving, without the foundation.',
+what: [
+'A donor-advised fund is a sub-fund held by a sponsoring public charity, here Legacy Global Foundation. You contribute assets, receive a charitable deduction in the year you give, and keep the privilege of advising how the fund invests and which charities it supports.',
+'Contributed assets legally belong to the sponsor, and your role is advisory. That is what makes a DAF far simpler to run than a private foundation: no separate entity, no board, and no annual return of your own.'
+],
+noteTitle: 'IN PLAIN TERMS',
+note: 'Think of it as a charitable savings account. You put money in when it suits your tax year, it can grow while it waits, and you send it out to the causes you choose when you are ready.',
+benefitsTitle: 'Flexibility now, impact for decades.',
+benefits: [
+{ n: '01', t: 'Deduction in the year you give', d: 'Contributions are deductible in the year they are made, which can matter most in a high-income year such as a business sale.' },
+{ n: '02', t: 'Give on your own timeline', d: 'Fund now and decide later. Grants can follow your research, your family’s interests and your circumstances.' },
+{ n: '03', t: 'Room to grow', d: 'Invested assets can grow, so there may be more to give in future years.' },
+{ n: '04', t: 'One set of records', d: 'Many gifts, one account and one receipt, instead of a stack of acknowledgment letters at tax time.' },
+{ n: '05', t: 'Privacy when you want it', d: 'Grants can be made anonymously, for donors who prefer to give quietly.' },
+{ n: '06', t: 'A family practice', d: 'Bring children and grandchildren into the decisions, so giving becomes something the family does together.' }
+],
+typesLabel: 'WHAT YOU CAN GIVE',
+typesTitle: 'Most sponsors take cash and stock. We take more.',
+types: [
+{ code: 'CASH', name: 'Cash, check, ACH or wire', d: 'The simplest way to open or add to a fund.' },
+{ code: 'SECURITIES', name: 'Publicly traded securities', d: 'Giving long-held appreciated stock can avoid capital gains tax on the appreciation, subject to deduction limits.' },
+{ code: 'REAL ESTATE', name: 'Real property', d: 'Residential, commercial or land, reviewed and accepted case by case.' },
+{ code: 'PRIVATE', name: 'Business interests', d: 'Interests in closely held companies and partnerships, often ahead of a sale.' },
+{ code: 'ALTERNATIVES', name: 'Private equity, private debt and other assets', d: 'Legacy can facilitate legally allowed alternative investments that many sponsors will not hold.' }
+],
+whyTitle: 'Why families move their DAFs to Legacy.',
+why: [
+{ k: 'THE LEGACY FAMILY', t: 'More than one charity behind you', d: 'Independent charities working together make multigenerational, international and split-interest giving possible.' },
+{ k: 'FLEXIBILITY', t: 'Custom and complex, handled', d: 'We take on giving most charities cannot or will not handle, with a concierge approach and a focus on compliance.' },
+{ k: 'DYNASTY GIVING', t: 'Built for ten generations', d: 'Successor advisors can carry a Legacy DAF forward generation after generation. There is no required sunset.' },
+{ k: 'ALTERNATIVE ASSETS', t: 'Invest beyond stocks and bonds', d: 'Real estate, private equity, private debt and other legally allowed investments, aligned with impact and returns.' }
+],
+best: 'Families who want to give consistently over years, people facing a high-income year, and anyone who wants foundation-style giving without running a foundation.',
+closer: 'Open a fund that outlasts you.'
+},
+fsp: {
+n: '02', code: 'FSP', title: 'Fiscal Sponsorship', href: 'fiscal-sponsorship.html',
+entity: 'SPONSORED BY LEGACY GLOBAL PROGRAMS',
+lede: 'Run a charitable program under the 501(c)(3) status of Legacy Global Programs. You do the charitable work; we handle the compliance, accounting, tax and legal side.',
+cta: 'TALK TO US ABOUT SPONSORSHIP',
+specs: [
+{ k: 'SPONSOR', v: 'Legacy Global Programs, a public 501(c)(3) charity' },
+{ k: 'FUNDS', v: 'Held by the sponsor in a fund for your program' },
+{ k: 'MISSION', v: 'Restricted to your program’s stated charitable purpose' },
+{ k: 'FUNDING', v: 'Online donations, checks, grants and other gifts' },
+{ k: 'OPERATIONS', v: 'Your program does the work and pays its costs from the fund' },
+{ k: 'OVERSIGHT', v: 'Spending follows the mission and Legacy’s policies' }
+],
+whatTitle: 'Start the work now. Skip forming a nonprofit.',
+what: [
+'Fiscal sponsorship is a formal agreement in which a nonprofit sponsor lets a project raise money under its tax-exempt status. Your program can receive tax-deductible donations and grants without forming its own 501(c)(3).',
+'In return, the program follows the sponsor’s policies and procedures, and the sponsor keeps oversight of how charitable funds are used.'
+],
+noteTitle: 'A WORKED EXAMPLE',
+note: 'A “Save the Dogs” fund can buy dog food or run a local animal shelter. It cannot fund cancer research, unless it is canine cancer. The mission statement sets what the money can do.',
+benefitsTitle: 'What sponsorship takes off your plate.',
+benefits: [
+{ n: '01', t: 'Tax-deductible donations', d: 'Donors give to a recognized public 501(c)(3), which strengthens fundraising from day one.' },
+{ n: '02', t: 'Administrative support', d: 'Accounting, compliance and reporting are handled for you, so leaders can focus on the mission.' },
+{ n: '03', t: 'Access to funding', d: 'Many foundations prefer to fund established nonprofits. Sponsorship can open those doors.' },
+{ n: '04', t: 'Lower overhead', d: 'Share the costs of insurance, legal work and infrastructure instead of carrying them alone.' },
+{ n: '05', t: 'Credibility', d: 'Association with an established sponsor gives donors and partners confidence.' },
+{ n: '06', t: 'Room to test and grow', d: 'Prove the idea and build support before deciding whether to stand up your own nonprofit.' }
+],
+typesLabel: 'MODELS OF SPONSORSHIP',
+typesTitle: 'Two common structures.',
+types: [
+{ code: 'TYPE 1', name: 'Comprehensive sponsorship', d: 'The project becomes part of the sponsor. The sponsor has full control, and the project is part of its own operations. Common when the project sits squarely within the sponsor’s mission.' },
+{ code: 'TYPE 2', name: 'Pre-approved grant relationship', d: 'The project keeps more independence. The sponsor receives and manages donations and grants them to the project for its charitable work. This is the model Legacy Global Programs uses most often.' }
+],
+whyTitle: 'A sponsor with a real back office.',
+why: [
+{ k: 'THE LEGACY FAMILY', t: 'Built for complex needs', d: 'Independent charities that work together, so your program can grow into new kinds of giving.' },
+{ k: 'LEGACY OFFICES', t: 'Bookkeeping, tax and reporting', d: 'The same team that administers the whole Legacy Family keeps your program’s books.' },
+{ k: 'OPERATIONS', t: 'Hire staff and run programs', d: 'Sponsored programs can hire staff and operate as their own initiative, in partnership with Legacy.' },
+{ k: 'THE GATEWAY', t: 'Requests without the runaround', d: 'Submit invoices, reimbursements and documents through one place, each handled by our team.' }
+],
+best: 'New initiatives, community projects and charitable programs that want to start raising money now, without the time and cost of forming a nonprofit.',
+closer: 'Bring us the mission. We’ll bring the paperwork.'
+},
+complex: {
+n: '03', code: 'CPX', title: 'Complex Giving', href: 'complex-giving.html',
+entity: 'THROUGH LEGACY GLOBAL FOUNDATION',
+lede: 'Most wealth isn’t cash. We help donors give business interests, real estate, retirement assets and other non-cash property, working alongside your own advisors.',
+cta: 'TALK TO US ABOUT A GIFT',
+specs: [
+{ k: 'ASSETS', v: 'Business interests, real estate, securities, retirement assets and more' },
+{ k: 'TIMING', v: 'Now, during life, or planned through a will or trust' },
+{ k: 'VEHICLES', v: 'DAFs, trusts, gift annuities and direct gifts' },
+{ k: 'ADVISORS', v: 'Coordinated with your attorney, CPA and financial advisor' },
+{ k: 'REVIEW', v: 'Each gift is reviewed for acceptance and compliance' }
+],
+whatTitle: 'Giving that goes beyond writing a check.',
+what: [
+'Complex charitable giving is any gift that involves financial, legal or tax structuring. It often uses vehicles designed to increase the impact of a gift while also addressing the donor’s own financial and tax situation.',
+'These gifts can let you give more than you could in cash, but they need careful planning and close coordination with the professionals who already know your finances.'
+],
+noteTitle: 'BEFORE YOU CALL',
+note: 'Have a rough value for the asset, how long you have owned it, any debt against it, and the names of your attorney and CPA. That is enough to start the conversation.',
+benefitsTitle: 'Why give assets instead of cash.',
+benefits: [
+{ n: '01', t: 'Tax efficiency', d: 'Donors may be able to deduct the fair market value of appreciated assets and avoid capital gains tax on the appreciation.' },
+{ n: '02', t: 'A larger gift', d: 'Assets that have grown in value can often do more for charity than the same dollars in cash.' },
+{ n: '03', t: 'Liquidity for illiquid assets', d: 'Turn a concentrated or hard-to-sell holding into charitable capital that can be granted out.' },
+{ n: '04', t: 'Part of an estate plan', d: 'Planned gifts through wills and trusts can support charity while serving family goals.' }
+],
+typesLabel: 'TYPES OF COMPLEX GIFTS',
+typesTitle: 'Common structures we work with.',
+types: [
+{ code: 'APPRECIATED', name: 'Appreciated securities', d: 'Giving long-held stock instead of cash can avoid capital gains tax on the appreciation, subject to deduction limits.' },
+{ code: 'REAL ESTATE', name: 'Real estate', d: 'Homes, commercial property and land given directly or through a trust.' },
+{ code: 'PRIVATE', name: 'Business interests', d: 'Shares in closely held companies, often given before a sale is finalized.' },
+{ code: 'RETIREMENT', name: 'Retirement accounts', d: 'Naming a charity as beneficiary can avoid income tax heirs would otherwise owe on the account.' },
+{ code: 'BARGAIN SALE', name: 'Bargain sales', d: 'Selling an asset to charity below fair market value; the difference can count as a charitable contribution.' },
+{ code: 'ANNUITY', name: 'Charitable gift annuities', d: 'A gift in exchange for fixed payments for life, with the remainder going to charity.' },
+{ code: 'INSURANCE', name: 'Life insurance', d: 'Naming a charity as beneficiary, or transferring ownership of a policy to a charity.' },
+{ code: 'DIGITAL', name: 'Cryptocurrency', d: 'Generally treated as property, so it can be given much like appreciated stock.' }
+],
+whyTitle: 'We say yes to gifts other sponsors decline.',
+why: [
+{ k: 'EXPERIENCE', t: 'Two decades of hard gifts', d: 'Business interests, real property and alternative assets are our everyday work, not exceptions.' },
+{ k: 'THE LEGACY FAMILY', t: 'The right vehicle for each gift', d: 'Independent charities with different structures, so the gift fits the asset and not the other way round.' },
+{ k: 'ADVISORS', t: 'We work with your team', d: 'We coordinate with your attorney, CPA and wealth advisor on risk and tax strategy.' },
+{ k: 'COMPLIANCE', t: 'Done carefully', d: 'Every gift is reviewed for acceptance, valuation and reporting requirements.' }
+],
+best: 'Business owners, real estate holders, and anyone whose largest assets aren’t sitting in a bank account.',
+closer: 'Your largest asset can be your largest gift.'
+},
+split: {
+n: '04', code: 'SIG', title: 'Split-Interest Giving', href: 'split-interest-giving.html',
+entity: 'CHARITABLE REMAINDER AND LEAD TRUSTS',
+lede: 'Give to charity and keep a financial interest: payments to you now with the remainder to charity, or payments to charity now with the remainder to your family.',
+cta: 'TALK TO US ABOUT A TRUST',
+specs: [
+{ k: 'CRT', v: 'Payments to you or your beneficiaries; the remainder goes to charity' },
+{ k: 'CLT', v: 'Payments to charity; the remainder passes to your heirs' },
+{ k: 'TERM', v: 'A set number of years, or a lifetime' },
+{ k: 'PAYOUT', v: 'A fixed amount (annuity) or a fixed percentage (unitrust)' },
+{ k: 'DEDUCTION', v: 'Based on the present value of the charitable interest' }
+],
+whatTitle: 'One gift, two beneficiaries.',
+what: [
+'A split-interest gift divides the benefits of an asset between charity and non-charitable beneficiaries. The two main forms are charitable remainder trusts (CRTs) and charitable lead trusts (CLTs).',
+'They are most often used by people with significant assets who want to balance charitable goals with income needs or estate planning.'
+],
+noteTitle: 'THE SHORT VERSION',
+note: 'A remainder trust pays you first and charity last. A lead trust pays charity first and your family last. Which one fits depends on whether you need income or want to pass wealth on.',
+benefitsTitle: 'What a split-interest gift can do.',
+benefits: [
+{ n: '01', t: 'An income stream', d: 'A remainder trust can pay you or your beneficiaries for life or for a term of years.' },
+{ n: '02', t: 'An immediate deduction', d: 'Donors receive a deduction based on the present value of the interest that will go to charity.' },
+{ n: '03', t: 'Sell appreciated assets inside the trust', d: 'A remainder trust is tax-exempt, so it can sell appreciated assets without paying capital gains tax at the time of sale.' },
+{ n: '04', t: 'Lower gift and estate taxes', d: 'A lead trust can reduce the taxable value of what eventually passes to heirs.' }
+],
+typesLabel: 'TYPES OF TRUSTS',
+typesTitle: 'The main variations.',
+types: [
+{ code: 'CRAT', name: 'Charitable remainder annuity trust', d: 'Pays a fixed dollar amount each year, set when the trust is created: at least 5% of the initial value, for up to 20 years or for life. No additional contributions.' },
+{ code: 'CRUT', name: 'Charitable remainder unitrust', d: 'Pays a fixed percentage, at least 5%, of the trust’s value as revalued each year, so payments rise and fall with the trust.' },
+{ code: 'NIMCRUT', name: 'Net income with makeup unitrust', d: 'Pays the lesser of the unitrust amount or the trust’s actual income, with any shortfall made up in later years when income allows.' },
+{ code: 'FLIP CRUT', name: 'Flip unitrust', d: 'Starts as a net-income unitrust and flips to a standard unitrust after a triggering event, such as the sale of a hard-to-sell asset.' },
+{ code: 'CLAT', name: 'Charitable lead annuity trust', d: 'Charity receives a fixed annuity each year for the term; the remainder passes to family.' },
+{ code: 'CLUT', name: 'Charitable lead unitrust', d: 'Charity receives a fixed percentage of the trust’s value, revalued each year; the remainder passes to family.' }
+],
+whyTitle: 'Trusts that are built and run properly.',
+why: [
+{ k: 'THE LEGACY FAMILY', t: 'A charitable partner for the remainder', d: 'The charitable interest can be directed to a Legacy charity, including a donor-advised fund your family advises.' },
+{ k: 'ADMINISTRATION', t: 'Ongoing compliance', d: 'Valuations, payments and reporting handled by the team behind the whole Legacy Family.' },
+{ k: 'ADVISORS', t: 'Coordinated with your plan', d: 'We work with your estate planning attorney and CPA from drafting through funding.' },
+{ k: 'SPECIAL NEEDS', t: 'Planning for every beneficiary', d: 'Trusts can be structured to provide income without jeopardizing a beneficiary’s government benefits.' }
+],
+best: 'People with appreciated assets who want income, and families planning to pass wealth to heirs while supporting charity.',
+closer: 'Provide for family and charity, in one plan.'
+},
+premium: {
+n: '05', code: 'PFG', title: 'Premium Financed Giving', href: 'premium-financed-giving.html',
+entity: 'LIFE INSURANCE AND CHARITABLE PLANNING',
+lede: 'Use life insurance with financed premiums to fund a larger charitable gift than an outright donation would allow, while keeping capital working elsewhere.',
+cta: 'TALK TO US ABOUT A STRATEGY',
+specs: [
+{ k: 'POLICY', v: 'Life insurance with a charity named as beneficiary' },
+{ k: 'FINANCING', v: 'A lender finances the premiums instead of the donor paying in cash' },
+{ k: 'GIFT', v: 'The death benefit funds the charitable gift' },
+{ k: 'TAX', v: 'Depends on structure; review with your own advisors' },
+{ k: 'FIT', v: 'Often part of a broader estate plan' }
+],
+whatTitle: 'Leverage, used carefully.',
+what: [
+'In premium financed giving, a life insurance policy names charity as its beneficiary, and a lender finances the premiums so the donor does not pay them out of pocket.',
+'It can make a much larger future gift possible, but it carries real risks: interest costs, collateral requirements and how the policy performs. It needs careful review with your advisors before you commit.'
+],
+noteTitle: 'WHO SHOULD CONSIDER IT',
+note: 'This is a strategy for donors with substantial assets and an established advisory team. If you are new to charitable planning, start with a donor-advised fund.',
+benefitsTitle: 'What it can make possible.',
+benefits: [
+{ n: '01', t: 'A larger gift', d: 'Financing the premiums can support a charitable gift larger than you could make outright.' },
+{ n: '02', t: 'Liquidity preserved', d: 'Capital stays invested or available for your business and family instead of paying premiums.' },
+{ n: '03', t: 'Possible tax advantages', d: 'Depending on the structure and your situation, some payments may be deductible and the death benefit can pass to charity free of tax.' },
+{ n: '04', t: 'Estate planning fit', d: 'Can sit alongside strategies that transfer wealth to heirs while supporting charity.' }
+],
+typesLabel: 'COMMON STRUCTURES',
+typesTitle: 'Ways financing can be used in charitable planning.',
+types: [
+{ code: '01', name: 'Life insurance premium financing', d: 'Financing premiums on a policy that names a charity as beneficiary.' },
+{ code: '02', name: 'Financed remainder trust contributions', d: 'Financing the initial contribution to a charitable remainder trust that pays income before the remainder goes to charity.' },
+{ code: '03', name: 'Financed gift annuities', d: 'Financing a charitable gift annuity that pays fixed income for life.' },
+{ code: '04', name: 'Financed DAF contributions', d: 'Making a larger initial contribution to a donor-advised fund while spreading the cost over time.' },
+{ code: '05', name: 'Financed lead trusts', d: 'Financing contributions to a charitable lead trust that pays charity before the remainder passes to family.' },
+{ code: '06', name: 'Philanthropic LLCs and partnerships', d: 'Entities that pool resources for charitable giving, funded in part with financing.' }
+],
+hasCautions: true,
+cautions: [
+'Interest rates can rise, increasing the cost of carrying the loan.',
+'Lenders may require more collateral if policy values or rates move against you.',
+'If the policy underperforms or lapses, the planned gift may be smaller or may not happen.',
+'Tax treatment depends on the exact structure. Get advice specific to your situation.'
+],
+whyTitle: 'A charitable partner that understands the structure.',
+why: [
+{ k: 'THE LEGACY FAMILY', t: 'The right charitable beneficiary', d: 'Legacy charities can receive the benefit, including into a donor-advised fund your family advises.' },
+{ k: 'ADVISORS', t: 'Coordination with your team', d: 'We work alongside your insurance professional, attorney and CPA.' },
+{ k: 'COMPLIANCE', t: 'Clear-eyed review', d: 'We look at the charitable side of the structure carefully before we participate.' },
+{ k: 'LONG VIEW', t: 'Built to last decades', d: 'These are long commitments, and we plan to be here for the full term.' }
+],
+best: 'High-net-worth donors who want to make a substantial future gift while keeping capital working elsewhere, with an advisory team already in place.',
+closer: 'Plan a gift bigger than a check.'
+}
+};
+const s = all[slug] || all.daf;
+if (!s.hasCautions) { s.hasCautions = false; s.cautions = []; }
+const others = Object.keys(all).filter((k) => k !== slug).map((k) => ({ n: all[k].n + ' · ' + all[k].code, title: all[k].title, href: all[k].href }));
+return { s, others };
+}
+}
+</script>
+<template id="dc-Header">
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<header style="background: #1f2622; color: #ecebe2; font-family: 'IBM Plex Sans', system-ui, sans-serif; border-bottom: 1px solid #36403a">
+<div style="max-width: 1180px; margin: 0 auto; padding: 12px clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 28px">
+<a href="index.html" style="display: inline-flex; align-items: center; gap: 12px; min-height: 44px; color: #ecebe2; text-decoration: none">
+<span aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 5px; background: #c9cec9; color: #121513; font-family: 'IBM Plex Mono', monospace; font-size: 12px; box-shadow: inset 0 -3px 0 rgba(0,0,0,0.25)">LG</span>
+<span style="font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 600; font-size: 14px; letter-spacing: 0.14em">LEGACY GLOBAL</span>
+</a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 22px">
+<sc-for list="{{links}}" as="l" hint-placeholder-count="5">
+<a href="{{l.href}}" style="{{l.style}}">{{l.label}}</a>
+</sc-for>
+<a href="gateway.html" style="display: inline-flex; align-items: center; min-height: 44px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #bfc5bb; text-decoration: none">LOG IN</a>
+<a href="contact.html" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px; border-radius: 5px; background: #b23a30; color: #ffffff; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-decoration: none; box-shadow: inset 0 -3px 0 rgba(0,0,0,0.3)">TALK TO US</a>
+</nav>
+</div>
+</header>
+</template>
+<script type="text/x-dc" data-for="Header" data-props='{"current":{"editor":"enum","options":["home","services","family","about","gateway","contact"],"default":"home"},"$preview":{"width":1440,"height":70}}'>
+class Component extends DCLogic {
+renderVals() {
+const current = this.props.current ?? 'home';
+const base = 'display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; text-decoration: none; ';
+const items = [
+{ key: 'services', label: 'Services', href: 'services.html' },
+{ key: 'family', label: 'The Legacy Family', href: 'legacy-family.html' },
+{ key: 'about', label: 'About', href: 'about.html' },
+{ key: 'gateway', label: 'Gateway', href: 'gateway.html' },
+{ key: 'contact', label: 'Contact', href: 'contact.html' }
+];
+return {
+links: items.map((i) => ({
+...i,
+style: base + (i.key === current
+? 'color: #ecebe2; box-shadow: inset 0 -2px 0 #7fc4c2'
+: 'color: #bfc5bb')
+}))
+};
+}
+}
+</script>
+<template id="dc-Footer">
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<footer style="background: #171c19; color: #ecebe2; font-family: 'IBM Plex Sans', system-ui, sans-serif">
+<div style="max-width: 1180px; margin: 0 auto; padding: 56px clamp(20px, 4vw, 48px) 28px">
+<div style="display: flex; flex-wrap: wrap; gap: 36px 48px">
+<div style="flex: 2 1 300px">
+<div style="font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 600; font-size: 14px; letter-spacing: 0.14em">LEGACY GLOBAL</div>
+<p style="margin: 14px 0 0; max-width: 380px; font-size: 14px; line-height: 1.6; color: #bfc5bb">Live well, leave a legacy. Donor-advised funds, fiscal sponsorship and charitable administration for donors, families and programs.</p>
+<div style="display: flex; flex-direction: column; margin-top: 18px">
+<a href="tel:+16027041000" style="display: inline-flex; align-items: center; min-height: 36px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #ecebe2; text-decoration: none">+1 602-704-1000</a>
+<a href="mailto:info@legacyglobal.org" style="display: inline-flex; align-items: center; min-height: 36px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #ecebe2; text-decoration: none">info@legacyglobal.org</a>
+</div>
+</div>
+<sc-for list="{{cols}}" as="col" hint-placeholder-count="3">
+<div style="flex: 1 1 160px; display: flex; flex-direction: column">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: #7fc4c2; margin-bottom: 8px">{{col.head}}</div>
+<sc-for list="{{col.links}}" as="l" hint-placeholder-count="4">
+<a href="{{l.href}}" style="display: inline-flex; align-items: center; min-height: 36px; font-size: 14px; color: #ecebe2; text-decoration: none">{{l.label}}</a>
+</sc-for>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px; margin-top: 44px; padding-top: 20px; border-top: 1px solid #36403a; font-size: 12px; color: #bfc5bb">
+<p style="margin: 0; max-width: 680px">Legacy Global Foundation and Legacy Global Programs are public 501(c)(3) charities. [EINS AND REQUIRED DISCLOSURES]. Information on this site is general and is not tax, legal or investment advice.</p>
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace">© [YEAR] LEGACY GLOBAL</p>
+</div>
+</div>
+</footer>
+</template>
+<script type="text/x-dc" data-for="Footer" data-props='{"$preview":{"width":1440,"height":380}}'>
+class Component extends DCLogic {
+renderVals() {
+return {
+cols: [
+{ head: 'SERVICES', links: [
+{ label: 'Donor-Advised Funds', href: 'donor-advised-funds.html' },
+{ label: 'Fiscal Sponsorship', href: 'fiscal-sponsorship.html' },
+{ label: 'Complex Giving', href: 'complex-giving.html' },
+{ label: 'Split-Interest Giving', href: 'split-interest-giving.html' },
+{ label: 'Premium Financed Giving', href: 'premium-financed-giving.html' }
+] },
+{ head: 'COMPANY', links: [
+{ label: 'About', href: 'about.html' },
+{ label: 'The Legacy Family', href: 'legacy-family.html' },
+{ label: 'Contact', href: 'contact.html' }
+] },
+{ head: 'MEMBERS', links: [
+{ label: 'Gateway', href: 'gateway.html' },
+{ label: 'Log in', href: 'gateway.html' },
+{ label: 'Cohort and advisor application', href: 'gateway.html' }
+] }
+]
+};
+}
+}
+</script>
+<noscript><p style="padding:24px;font:16px system-ui;color:#ecebe2">This preview site needs JavaScript turned on.</p></noscript>
+</body>
+</html>

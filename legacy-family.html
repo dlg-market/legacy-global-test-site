@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>The Legacy Family | Legacy Global</title>
+<meta name="description" content="Legacy Global Foundation, Legacy Global Programs and Legacy Offices.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<style id="dc-cloak">body{visibility:hidden;background:#1f2622}</style>
+<noscript><style>body{visibility:visible !important}</style></noscript>
+<script src="assets/dc-lite.js" defer></script>
+</head>
+<body>
+<template id="dc-page">
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+body{margin:0;background:#1f2622}
+a{color:#121513;text-decoration:none}a:hover{color:#000000}
+</style>
+</helmet>
+<div style="background: #b3b9b4; color: #121513; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 16px; line-height: 1.6">
+
+<dc-import name="Header" current="family" hint-size="100%,70px"></dc-import>
+
+<section style="background-color: #1f2622; background-image: linear-gradient(rgba(236,235,226,0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(236,235,226,0.045) 1px, transparent 1px); background-size: 48px 48px; color: #ecebe2">
+<div style="max-width: 1180px; margin: 0 auto; padding: clamp(48px, 7vw, 100px) clamp(20px, 4vw, 48px) clamp(56px, 7vw, 96px)">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #7fc4c2">THE LEGACY FAMILY</p>
+<h1 style="margin: 20px 0 0; max-width: 940px; font-family: 'Archivo', sans-serif; font-stretch: 108%; font-weight: 600; font-size: clamp(2.6rem, 6.4vw, 5.6rem); line-height: 0.96; letter-spacing: -0.035em">Independent charities. Shared back office.</h1>
+<p style="margin: 26px 0 0; max-width: 640px; font-size: clamp(1.05rem, 1.5vw, 1.22rem); line-height: 1.55; color: #c8ccc4">The Legacy Family is a group of independent charities and organizations working together. Each offers different charitable vehicles; shared administration lets them solve problems no single charity could.</p>
+</div>
+</section>
+
+<section style="max-width: 1180px; margin: 0 auto; padding: clamp(64px, 8vw, 112px) clamp(20px, 4vw, 48px)">
+<div style="display: flex; flex-direction: column; gap: 32px">
+<sc-for list="{{orgs}}" as="o" hint-placeholder-count="3">
+<article style="display: flex; flex-wrap: wrap; border: 1.5px solid #121513; background: #c9cec9; box-shadow: 6px 6px 0 #121513">
+<div style="flex: 1 1 280px; display: flex; flex-direction: column; justify-content: space-between; gap: 24px; padding: 26px 24px; background: #343a37; color: #ecebe2; box-sizing: border-box">
+<div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: #7fc4c2">{{o.kind}}</div>
+<h2 style="margin: 10px 0 0; font-family: 'Archivo', sans-serif; font-stretch: 106%; font-weight: 600; font-size: clamp(1.6rem, 2.8vw, 2.2rem); line-height: 1.05; letter-spacing: -0.025em">{{o.name}}</h2>
+</div>
+<div style="font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 600; font-size: 2.4rem; letter-spacing: -0.02em; color: #7fc4c2">{{o.code}}</div>
+</div>
+<div style="flex: 2 1 420px; padding: 26px 24px 28px">
+<p style="margin: 0; font-size: 17px; line-height: 1.65; color: #1c201d">{{o.body}}</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px">
+<sc-for list="{{o.tags}}" as="t" hint-placeholder-count="3">
+<span style="display: inline-flex; align-items: center; min-height: 34px; padding: 0 12px; border-radius: 5px; background: #d3d7d3; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.08em; box-shadow: inset 0 -3px 0 rgba(0,0,0,0.14)">{{t}}</span>
+</sc-for>
+</div>
+<sc-if value="{{o.hasLink}}" hint-placeholder-val="{{ true }}">
+<a href="{{o.href}}" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin-top: 14px; font-size: 14px; font-weight: 500; color: #164a4c">{{o.link}} <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></a>
+</sc-if>
+</div>
+</article>
+</sc-for>
+</div>
+</section>
+
+<section style="background: #1f2622; color: #ecebe2">
+<div style="max-width: 1180px; margin: 0 auto; padding: clamp(64px, 8vw, 112px) clamp(20px, 4vw, 48px)">
+<div style="display: flex; align-items: center; gap: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em"><span style="color: #7fc4c2">02</span><span>HOW SHARED ADMINISTRATION WORKS</span><span aria-hidden="true" style="flex: 1; height: 1px; background: #4a554e"></span></div>
+<div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 16px; margin-top: 36px">
+<div style="flex: 1 1 240px; padding: 22px 20px; border: 1px solid #4a554e; border-radius: 8px; background: #26302b">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #7fc4c2">INDEPENDENT CHARITIES</div>
+<p style="margin: 10px 0 0; font-size: 15px; color: #c8ccc4">Legacy Global Foundation, Legacy Global Programs, and more than a dozen other organizations, each with its own mission and board.</p>
+</div>
+<div aria-hidden="true" style="display: flex; align-items: center; font-family: 'IBM Plex Mono', monospace; color: #7fc4c2">→</div>
+<div style="flex: 1 1 240px; padding: 22px 20px; border-radius: 8px; background: #2A7173; box-shadow: inset 0 -5px 0 rgba(0,0,0,0.25)">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #ecebe2">LEGACY OFFICES</div>
+<p style="margin: 10px 0 0; font-size: 15px; color: #ffffff">One administration team shared across the family.</p>
+</div>
+<div aria-hidden="true" style="display: flex; align-items: center; font-family: 'IBM Plex Mono', monospace; color: #7fc4c2">→</div>
+<div style="flex: 1 1 240px; padding: 22px 20px; border: 1px solid #4a554e; border-radius: 8px; background: #26302b">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #7fc4c2">WHAT IT HANDLES</div>
+<p style="margin: 10px 0 0; font-size: 15px; color: #c8ccc4">Structuring, compliance, reporting, bookkeeping and tax services.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section style="max-width: 1180px; margin: 0 auto; padding: clamp(64px, 8vw, 112px) clamp(20px, 4vw, 48px)">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 48px; padding: clamp(28px, 4vw, 44px); border: 1.5px solid #121513; background: #c9cec9; box-shadow: 6px 6px 0 #121513">
+<div style="flex: 1 1 420px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: #164a4c">FOR CHARITIES</div>
+<h2 style="margin: 10px 0 0; font-family: 'Archivo', sans-serif; font-stretch: 108%; font-weight: 600; font-size: clamp(1.8rem, 3.4vw, 2.6rem); line-height: 1.05; letter-spacing: -0.03em">Join the Legacy Family.</h2>
+<p style="margin: 12px 0 0; max-width: 560px; font-size: 16px; color: #2e3330">Legacy Offices administers more than a dozen independent organizations. Talk with us about whether your charity would benefit from shared administration.</p>
+</div>
+<a href="contact.html" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 22px; border-radius: 6px; background: #2A7173; color: #ffffff; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; box-shadow: inset 0 -4px 0 rgba(0,0,0,0.3)">START A CONVERSATION</a>
+</div>
+</section>
+
+<dc-import name="Footer" hint-size="100%,380px"></dc-import>
+
+</div>
+</template>
+<script type="text/x-dc" data-for="page" data-props='{"$preview":{"width":1440,"height":4600}}'>
+class Component extends DCLogic {
+renderVals() {
+return {
+orgs: [
+{ kind: 'PUBLIC 501(C)(3) CHARITY · 20+ YEARS', name: 'Legacy Global Foundation', code: 'LGF', body: 'Where the Legacy Family started. Operating for more than two decades, Legacy Global Foundation focuses on donor-advised funds and complex giving: the benefits of your own foundation, without the headaches.', tags: ['DONOR-ADVISED FUNDS', 'COMPLEX GIVING', 'ALTERNATIVE ASSETS'], hasLink: true, link: 'Donor-advised funds', href: 'donor-advised-funds.html' },
+{ kind: 'PUBLIC 501(C)(3) CHARITY · SINCE 2007', name: 'Legacy Global Programs', code: 'LGP', body: 'First established as The Charity Foundation and later renamed, Legacy Global Programs joined the family in 2007. It provides fiscal sponsorship to operating charitable programs, handling the compliance, tax and legal work so leaders can focus on the mission.', tags: ['FISCAL SPONSORSHIP', 'OPERATING PROGRAMS'], hasLink: true, link: 'Fiscal sponsorship', href: 'fiscal-sponsorship.html' },
+{ kind: 'ADMINISTRATION COMPANY', name: 'Legacy Offices', code: 'LO', body: 'The back-office company that powers the Legacy Family. As specialists in charitable management, Legacy Offices provides administration for the family’s charities and for more than a dozen other independent organizations.', tags: ['COMPLIANCE', 'BOOKKEEPING', 'TAX', 'REPORTING'], hasLink: false, link: '', href: '#' }
+]
+};
+}
+}
+</script>
+<template id="dc-Header">
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<header style="background: #1f2622; color: #ecebe2; font-family: 'IBM Plex Sans', system-ui, sans-serif; border-bottom: 1px solid #36403a">
+<div style="max-width: 1180px; margin: 0 auto; padding: 12px clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 28px">
+<a href="index.html" style="display: inline-flex; align-items: center; gap: 12px; min-height: 44px; color: #ecebe2; text-decoration: none">
+<span aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 5px; background: #c9cec9; color: #121513; font-family: 'IBM Plex Mono', monospace; font-size: 12px; box-shadow: inset 0 -3px 0 rgba(0,0,0,0.25)">LG</span>
+<span style="font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 600; font-size: 14px; letter-spacing: 0.14em">LEGACY GLOBAL</span>
+</a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 22px">
+<sc-for list="{{links}}" as="l" hint-placeholder-count="5">
+<a href="{{l.href}}" style="{{l.style}}">{{l.label}}</a>
+</sc-for>
+<a href="gateway.html" style="display: inline-flex; align-items: center; min-height: 44px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #bfc5bb; text-decoration: none">LOG IN</a>
+<a href="contact.html" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px; border-radius: 5px; background: #b23a30; color: #ffffff; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-decoration: none; box-shadow: inset 0 -3px 0 rgba(0,0,0,0.3)">TALK TO US</a>
+</nav>
+</div>
+</header>
+</template>
+<script type="text/x-dc" data-for="Header" data-props='{"current":{"editor":"enum","options":["home","services","family","about","gateway","contact"],"default":"home"},"$preview":{"width":1440,"height":70}}'>
+class Component extends DCLogic {
+renderVals() {
+const current = this.props.current ?? 'home';
+const base = 'display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; text-decoration: none; ';
+const items = [
+{ key: 'services', label: 'Services', href: 'services.html' },
+{ key: 'family', label: 'The Legacy Family', href: 'legacy-family.html' },
+{ key: 'about', label: 'About', href: 'about.html' },
+{ key: 'gateway', label: 'Gateway', href: 'gateway.html' },
+{ key: 'contact', label: 'Contact', href: 'contact.html' }
+];
+return {
+links: items.map((i) => ({
+...i,
+style: base + (i.key === current
+? 'color: #ecebe2; box-shadow: inset 0 -2px 0 #7fc4c2'
+: 'color: #bfc5bb')
+}))
+};
+}
+}
+</script>
+<template id="dc-Footer">
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<footer style="background: #171c19; color: #ecebe2; font-family: 'IBM Plex Sans', system-ui, sans-serif">
+<div style="max-width: 1180px; margin: 0 auto; padding: 56px clamp(20px, 4vw, 48px) 28px">
+<div style="display: flex; flex-wrap: wrap; gap: 36px 48px">
+<div style="flex: 2 1 300px">
+<div style="font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 600; font-size: 14px; letter-spacing: 0.14em">LEGACY GLOBAL</div>
+<p style="margin: 14px 0 0; max-width: 380px; font-size: 14px; line-height: 1.6; color: #bfc5bb">Live well, leave a legacy. Donor-advised funds, fiscal sponsorship and charitable administration for donors, families and programs.</p>
+<div style="display: flex; flex-direction: column; margin-top: 18px">
+<a href="tel:+16027041000" style="display: inline-flex; align-items: center; min-height: 36px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #ecebe2; text-decoration: none">+1 602-704-1000</a>
+<a href="mailto:info@legacyglobal.org" style="display: inline-flex; align-items: center; min-height: 36px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #ecebe2; text-decoration: none">info@legacyglobal.org</a>
+</div>
+</div>
+<sc-for list="{{cols}}" as="col" hint-placeholder-count="3">
+<div style="flex: 1 1 160px; display: flex; flex-direction: column">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: #7fc4c2; margin-bottom: 8px">{{col.head}}</div>
+<sc-for list="{{col.links}}" as="l" hint-placeholder-count="4">
+<a href="{{l.href}}" style="display: inline-flex; align-items: center; min-height: 36px; font-size: 14px; color: #ecebe2; text-decoration: none">{{l.label}}</a>
+</sc-for>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px; margin-top: 44px; padding-top: 20px; border-top: 1px solid #36403a; font-size: 12px; color: #bfc5bb">
+<p style="margin: 0; max-width: 680px">Legacy Global Foundation and Legacy Global Programs are public 501(c)(3) charities. [EINS AND REQUIRED DISCLOSURES]. Information on this site is general and is not tax, legal or investment advice.</p>
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace">© [YEAR] LEGACY GLOBAL</p>
+</div>
+</div>
+</footer>
+</template>
+<script type="text/x-dc" data-for="Footer" data-props='{"$preview":{"width":1440,"height":380}}'>
+class Component extends DCLogic {
+renderVals() {
+return {
+cols: [
+{ head: 'SERVICES', links: [
+{ label: 'Donor-Advised Funds', href: 'donor-advised-funds.html' },
+{ label: 'Fiscal Sponsorship', href: 'fiscal-sponsorship.html' },
+{ label: 'Complex Giving', href: 'complex-giving.html' },
+{ label: 'Split-Interest Giving', href: 'split-interest-giving.html' },
+{ label: 'Premium Financed Giving', href: 'premium-financed-giving.html' }
+] },
+{ head: 'COMPANY', links: [
+{ label: 'About', href: 'about.html' },
+{ label: 'The Legacy Family', href: 'legacy-family.html' },
+{ label: 'Contact', href: 'contact.html' }
+] },
+{ head: 'MEMBERS', links: [
+{ label: 'Gateway', href: 'gateway.html' },
+{ label: 'Log in', href: 'gateway.html' },
+{ label: 'Cohort and advisor application', href: 'gateway.html' }
+] }
+]
+};
+}
+}
+</script>
+<noscript><p style="padding:24px;font:16px system-ui;color:#ecebe2">This preview site needs JavaScript turned on.</p></noscript>
+</body>
+</html>

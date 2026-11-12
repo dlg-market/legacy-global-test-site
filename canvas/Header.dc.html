@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Site header</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<header style="background: #1f2622; color: #ecebe2; font-family: 'IBM Plex Sans', system-ui, sans-serif; border-bottom: 1px solid #36403a">
+<div style="max-width: 1180px; margin: 0 auto; padding: 12px clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 28px">
+<a href="Home.dc.html" style="display: inline-flex; align-items: center; gap: 12px; min-height: 44px; color: #ecebe2; text-decoration: none">
+<span aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 5px; background: #c9cec9; color: #121513; font-family: 'IBM Plex Mono', monospace; font-size: 12px; box-shadow: inset 0 -3px 0 rgba(0,0,0,0.25)">LG</span>
+<span style="font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 600; font-size: 14px; letter-spacing: 0.14em">LEGACY GLOBAL</span>
+</a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 22px">
+<sc-for list="{{links}}" as="l" hint-placeholder-count="5">
+<a href="{{l.href}}" style="{{l.style}}">{{l.label}}</a>
+</sc-for>
+<a href="Gateway.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #bfc5bb; text-decoration: none">LOG IN</a>
+<a href="Contact.dc.html" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px; border-radius: 5px; background: #b23a30; color: #ffffff; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-decoration: none; box-shadow: inset 0 -3px 0 rgba(0,0,0,0.3)">TALK TO US</a>
+</nav>
+</div>
+</header>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"current":{"editor":"enum","options":["home","services","family","about","gateway","contact"],"default":"home"},"$preview":{"width":1440,"height":70}}'>
+class Component extends DCLogic {
+renderVals() {
+const current = this.props.current ?? 'home';
+const base = 'display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; text-decoration: none; ';
+const items = [
+{ key: 'services', label: 'Services', href: 'Services.dc.html' },
+{ key: 'family', label: 'The Legacy Family', href: 'Family.dc.html' },
+{ key: 'about', label: 'About', href: 'About.dc.html' },
+{ key: 'gateway', label: 'Gateway', href: 'Gateway.dc.html' },
+{ key: 'contact', label: 'Contact', href: 'Contact.dc.html' }
+];
+return {
+links: items.map((i) => ({
+...i,
+style: base + (i.key === current
+? 'color: #ecebe2; box-shadow: inset 0 -2px 0 #7fc4c2'
+: 'color: #bfc5bb')
+}))
+};
+}
+}
+</script>
+</body>
+</html>

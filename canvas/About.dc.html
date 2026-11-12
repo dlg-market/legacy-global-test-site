@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>About | Legacy Global</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+body{margin:0;background:#1f2622}
+a{color:#121513;text-decoration:none}a:hover{color:#000000}
+</style>
+</helmet>
+<div style="background: #b3b9b4; color: #121513; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 16px; line-height: 1.6">
+
+<dc-import name="Header" current="about" hint-size="100%,70px"></dc-import>
+
+<section style="background-color: #1f2622; background-image: linear-gradient(rgba(236,235,226,0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(236,235,226,0.045) 1px, transparent 1px); background-size: 48px 48px; color: #ecebe2">
+<div style="max-width: 1180px; margin: 0 auto; padding: clamp(48px, 7vw, 100px) clamp(20px, 4vw, 48px) clamp(56px, 7vw, 96px)">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #7fc4c2">ABOUT LEGACY</p>
+<h1 style="margin: 20px 0 0; max-width: 980px; font-family: 'Archivo', sans-serif; font-stretch: 108%; font-weight: 600; font-size: clamp(2.6rem, 6.4vw, 5.6rem); line-height: 0.96; letter-spacing: -0.035em">You are blessed when you bless others.</h1>
+<p style="margin: 26px 0 0; max-width: 620px; font-size: clamp(1.05rem, 1.5vw, 1.22rem); line-height: 1.55; color: #c8ccc4">Legacy exists to help organizations and donors give more efficiently and make a meaningful impact, across generations.</p>
+</div>
+</section>
+
+<section style="max-width: 1180px; margin: 0 auto; padding: clamp(64px, 8vw, 112px) clamp(20px, 4vw, 48px)">
+<div style="display: flex; align-items: center; gap: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em"><span style="color: #164a4c">01</span><span>MISSION, VISION AND BELIEFS</span><span aria-hidden="true" style="flex: 1; height: 1px; background: #121513"></span></div>
+<div style="margin-top: 32px; border-top: 1.5px solid #121513">
+<sc-for list="{{beliefs}}" as="b" hint-placeholder-count="4">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 32px; padding: 26px 0; border-bottom: 1px solid #969c98">
+<span style="flex: 0 0 60px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #164a4c">{{b.n}}</span>
+<p style="margin: 0; flex: 1 1 480px; font-family: 'Archivo', sans-serif; font-stretch: 104%; font-weight: 500; font-size: clamp(1.3rem, 2.4vw, 1.9rem); line-height: 1.25; letter-spacing: -0.02em">{{b.t}}</p>
+</div>
+</sc-for>
+</div>
+</section>
+
+<section style="background-color: #a6aca8; background-image: linear-gradient(rgba(18,21,19,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(18,21,19,0.06) 1px, transparent 1px); background-size: 40px 40px">
+<div style="max-width: 1180px; margin: 0 auto; padding: clamp(64px, 8vw, 112px) clamp(20px, 4vw, 48px)">
+<div style="display: flex; align-items: center; gap: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em"><span style="color: #164a4c">02</span><span>WHAT WE DO</span><span aria-hidden="true" style="flex: 1; height: 1px; background: #121513"></span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 22px; margin-top: 32px">
+<sc-for list="{{pillars}}" as="p" hint-placeholder-count="3">
+<div style="flex: 1 1 280px; padding: 24px 22px 26px; border: 1.5px solid #121513; background: #d3d7d3; box-shadow: 6px 6px 0 #121513">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: #164a4c">{{p.k}}</div>
+<h3 style="margin: 10px 0 0; font-family: 'Archivo', sans-serif; font-stretch: 106%; font-weight: 600; font-size: 1.45rem; letter-spacing: -0.02em">{{p.t}}</h3>
+<p style="margin: 10px 0 0; font-size: 15px; color: #2e3330">{{p.d}}</p>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section style="max-width: 1180px; margin: 0 auto; padding: clamp(64px, 8vw, 112px) clamp(20px, 4vw, 48px)">
+<div style="display: flex; flex-wrap: wrap; gap: 48px 64px">
+<div style="flex: 1 1 400px">
+<div style="display: flex; align-items: center; gap: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em"><span style="color: #164a4c">03</span><span>CORE EXPERTISE</span><span aria-hidden="true" style="flex: 1; height: 1px; background: #121513"></span></div>
+<ol style="margin: 24px 0 0; padding: 0; list-style: none">
+<sc-for list="{{expertise}}" as="e" hint-placeholder-count="7">
+<li style="display: flex; gap: 16px; padding: 14px 0; border-bottom: 1px solid #969c98; font-size: 17px"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #164a4c; padding-top: 4px">{{e.n}}</span>{{e.t}}</li>
+</sc-for>
+</ol>
+</div>
+<div style="flex: 1 1 400px">
+<div style="display: flex; align-items: center; gap: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em"><span style="color: #164a4c">04</span><span>WHO WE SERVE</span><span aria-hidden="true" style="flex: 1; height: 1px; background: #121513"></span></div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 24px">
+<sc-for list="{{stakeholders}}" as="s" hint-placeholder-count="8">
+<span style="display: flex; align-items: center; min-height: 56px; padding: 0 16px; border-radius: 6px; background: #c9cec9; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.08em; box-shadow: inset 0 -4px 0 rgba(0,0,0,0.15)">{{s}}</span>
+</sc-for>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background: #343a37; color: #ecebe2">
+<div style="max-width: 1180px; margin: 0 auto; padding: 44px clamp(20px, 4vw, 48px)">
+<p style="margin: 0 0 18px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: #7fc4c2">21 AREAS OF CHARITABLE FOCUS</p>
+<p style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 104%; font-weight: 500; font-size: clamp(1.15rem, 2vw, 1.6rem); line-height: 1.5; letter-spacing: -0.01em">{{focusLine}}</p>
+</div>
+</section>
+
+<section style="max-width: 1180px; margin: 0 auto; padding: clamp(64px, 8vw, 112px) clamp(20px, 4vw, 48px)">
+<div style="display: flex; align-items: center; gap: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em"><span style="color: #164a4c">05</span><span>OUR TEAM</span><span aria-hidden="true" style="flex: 1; height: 1px; background: #121513"></span></div>
+<h2 style="margin: 26px 0 0; font-family: 'Archivo', sans-serif; font-stretch: 108%; font-weight: 600; font-size: clamp(1.9rem, 3.8vw, 3rem); line-height: 1.04; letter-spacing: -0.03em">The people behind the paperwork.</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 22px; margin-top: 36px">
+<sc-for list="{{team}}" as="t" hint-placeholder-count="4">
+<div style="border: 1.5px solid #121513; background: #c9cec9; box-shadow: 6px 6px 0 #121513">
+<div style="display: flex; align-items: center; justify-content: center; height: 220px; background: #8a908c; color: #121513; font-size: 13px">[PHOTO]</div>
+<div style="padding: 16px 16px 20px">
+<div style="font-family: 'Archivo', sans-serif; font-stretch: 106%; font-weight: 600; font-size: 1.2rem">[NAME]</div>
+<div style="margin-top: 4px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #164a4c">[ROLE]</div>
+</div>
+</div>
+</sc-for>
+</div>
+</section>
+
+<dc-import name="Footer" hint-size="100%,380px"></dc-import>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":5600}}'>
+class Component extends DCLogic {
+renderVals() {
+const focus = ['Addiction recovery', 'Animal welfare', 'Arts', 'Community development', 'Counseling', 'Culture and humanities', 'Education and scholarships', 'Environment and species protection', 'Geological research', 'Human and health services', 'Humanitarian relief', 'Justice and public safety', 'Matching grants', 'Medical assistance', 'Medical research', 'Indian Nations and First Nations', 'Religion', 'Scientific research', 'Social welfare', 'Technology development', 'Women’s and children’s shelters'];
+return {
+focusLine: focus.join('  /  '),
+beliefs: [
+{ n: '01', t: 'Legacy blesses the whole earth through innovative, effective, ethical and responsible charitable service and solutions.' },
+{ n: '02', t: 'Legacy empowers and creates opportunities for stakeholders.' },
+{ n: '03', t: 'Legacy creates well-being and prosperity by inspiring the transfer of values across generations.' },
+{ n: '04', t: 'Legacy delivers the promise that you are blessed when you bless others.' }
+],
+pillars: [
+{ k: 'PLANNING', t: 'Charitable planning', d: 'Work with our team to plan the gift that will have the greatest impact on your community.' },
+{ k: 'MANAGEMENT', t: 'Charitable management', d: 'We do the vetting and compliance work. You do the giving.' },
+{ k: 'FOR-IMPACT', t: 'For-impact programs', d: 'We look at the bigger picture, so the difference you make keeps going.' }
+],
+expertise: [
+{ n: '01', t: 'Charitable stewardship and administration' },
+{ n: '02', t: 'Complex transactions and planned giving' },
+{ n: '03', t: 'Alternative assets' },
+{ n: '04', t: 'International giving' },
+{ n: '05', t: 'Intergenerational planning and training' },
+{ n: '06', t: 'Impact investing' },
+{ n: '07', t: 'Coordinating with advisors on risk and tax strategy' }
+],
+stakeholders: ['DONORS', 'FAMILIES', 'ADVISORS', 'GRANTEES', 'ORGANIZATIONS', 'COMMUNITIES', 'INDIVIDUALS', 'VOLUNTEERS'],
+team: [1, 2, 3, 4]
+};
+}
+}
+</script>
+</body>
+</html>

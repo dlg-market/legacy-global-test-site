@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Site footer</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<footer style="background: #171c19; color: #ecebe2; font-family: 'IBM Plex Sans', system-ui, sans-serif">
+<div style="max-width: 1180px; margin: 0 auto; padding: 56px clamp(20px, 4vw, 48px) 28px">
+<div style="display: flex; flex-wrap: wrap; gap: 36px 48px">
+<div style="flex: 2 1 300px">
+<div style="font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 600; font-size: 14px; letter-spacing: 0.14em">LEGACY GLOBAL</div>
+<p style="margin: 14px 0 0; max-width: 380px; font-size: 14px; line-height: 1.6; color: #bfc5bb">Live well, leave a legacy. Donor-advised funds, fiscal sponsorship and charitable administration for donors, families and programs.</p>
+<div style="display: flex; flex-direction: column; margin-top: 18px">
+<a href="tel:+16027041000" style="display: inline-flex; align-items: center; min-height: 36px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #ecebe2; text-decoration: none">+1 602-704-1000</a>
+<a href="mailto:info@legacyglobal.org" style="display: inline-flex; align-items: center; min-height: 36px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #ecebe2; text-decoration: none">info@legacyglobal.org</a>
+</div>
+</div>
+<sc-for list="{{cols}}" as="col" hint-placeholder-count="3">
+<div style="flex: 1 1 160px; display: flex; flex-direction: column">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: #7fc4c2; margin-bottom: 8px">{{col.head}}</div>
+<sc-for list="{{col.links}}" as="l" hint-placeholder-count="4">
+<a href="{{l.href}}" style="display: inline-flex; align-items: center; min-height: 36px; font-size: 14px; color: #ecebe2; text-decoration: none">{{l.label}}</a>
+</sc-for>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px; margin-top: 44px; padding-top: 20px; border-top: 1px solid #36403a; font-size: 12px; color: #bfc5bb">
+<p style="margin: 0; max-width: 680px">Legacy Global Foundation and Legacy Global Programs are public 501(c)(3) charities. [EINS AND REQUIRED DISCLOSURES]. Information on this site is general and is not tax, legal or investment advice.</p>
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace">© [YEAR] LEGACY GLOBAL</p>
+</div>
+</div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":380}}'>
+class Component extends DCLogic {
+renderVals() {
+return {
+cols: [
+{ head: 'SERVICES', links: [
+{ label: 'Donor-Advised Funds', href: 'Svc-DAF.dc.html' },
+{ label: 'Fiscal Sponsorship', href: 'Svc-FSP.dc.html' },
+{ label: 'Complex Giving', href: 'Svc-Complex.dc.html' },
+{ label: 'Split-Interest Giving', href: 'Svc-Split.dc.html' },
+{ label: 'Premium Financed Giving', href: 'Svc-Premium.dc.html' }
+] },
+{ head: 'COMPANY', links: [
+{ label: 'About', href: 'About.dc.html' },
+{ label: 'The Legacy Family', href: 'Family.dc.html' },
+{ label: 'Contact', href: 'Contact.dc.html' }
+] },
+{ head: 'MEMBERS', links: [
+{ label: 'Gateway', href: 'Gateway.dc.html' },
+{ label: 'Log in', href: 'Gateway.dc.html' },
+{ label: 'Cohort and advisor application', href: 'Gateway.dc.html' }
+] }
+]
+};
+}
+}
+</script>
+</body>
+</html>

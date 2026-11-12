@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<base href="C:/Program Files/Git/legacy-global-test-site/">
+<title>Page not found | Legacy Global</title>
+<meta name="description" content="Page not found.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<style id="dc-cloak">body{visibility:hidden;background:#1f2622}</style>
+<noscript><style>body{visibility:visible !important}</style></noscript>
+<script src="assets/dc-lite.js" defer></script>
+</head>
+<body>
+<template id="dc-page">
+<div style="background: #1f2622; color: #ecebe2; font-family: 'IBM Plex Sans', system-ui, sans-serif; min-height: 100vh; display: flex; flex-direction: column">
+<dc-import name="Header" current="none"></dc-import>
+<section style="flex: 1; max-width: 1180px; width: 100%; margin: 0 auto; padding: 120px clamp(20px, 4vw, 48px); box-sizing: border-box">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #7fc4c2">ERROR 404</p>
+<h1 style="margin: 20px 0 0; font-family: 'Archivo', sans-serif; font-stretch: 108%; font-weight: 600; font-size: clamp(2.6rem, 6vw, 5rem); line-height: 0.96; letter-spacing: -0.035em">That key isn't mapped.</h1>
+<p style="margin: 24px 0 0; max-width: 520px; font-size: 18px; color: #c8ccc4">The page you were looking for doesn't exist on this preview site.</p>
+<a href="index.html" style="display: inline-flex; align-items: center; min-height: 50px; margin-top: 32px; padding: 0 22px; border-radius: 6px; background: #2A7173; color: #ffffff; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-decoration: none; box-shadow: inset 0 -4px 0 rgba(0,0,0,0.3)">BACK TO HOME</a>
+</section>
+</div>
+</template>
+<script type="text/x-dc" data-for="page" data-props='{}'>
+class Component extends DCLogic { renderVals() { return {}; } }
+</script>
+<template id="dc-Header">
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<header style="background: #1f2622; color: #ecebe2; font-family: 'IBM Plex Sans', system-ui, sans-serif; border-bottom: 1px solid #36403a">
+<div style="max-width: 1180px; margin: 0 auto; padding: 12px clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 28px">
+<a href="index.html" style="display: inline-flex; align-items: center; gap: 12px; min-height: 44px; color: #ecebe2; text-decoration: none">
+<span aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 5px; background: #c9cec9; color: #121513; font-family: 'IBM Plex Mono', monospace; font-size: 12px; box-shadow: inset 0 -3px 0 rgba(0,0,0,0.25)">LG</span>
+<span style="font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 600; font-size: 14px; letter-spacing: 0.14em">LEGACY GLOBAL</span>
+</a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 22px">
+<sc-for list="{{links}}" as="l" hint-placeholder-count="5">
+<a href="{{l.href}}" style="{{l.style}}">{{l.label}}</a>
+</sc-for>
+<a href="gateway.html" style="display: inline-flex; align-items: center; min-height: 44px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #bfc5bb; text-decoration: none">LOG IN</a>
+<a href="contact.html" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px; border-radius: 5px; background: #b23a30; color: #ffffff; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-decoration: none; box-shadow: inset 0 -3px 0 rgba(0,0,0,0.3)">TALK TO US</a>
+</nav>
+</div>
+</header>
+</template>
+<script type="text/x-dc" data-for="Header" data-props='{"current":{"editor":"enum","options":["home","services","family","about","gateway","contact"],"default":"home"},"$preview":{"width":1440,"height":70}}'>
+class Component extends DCLogic {
+renderVals() {
+const current = this.props.current ?? 'home';
+const base = 'display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; text-decoration: none; ';
+const items = [
+{ key: 'services', label: 'Services', href: 'services.html' },
+{ key: 'family', label: 'The Legacy Family', href: 'legacy-family.html' },
+{ key: 'about', label: 'About', href: 'about.html' },
+{ key: 'gateway', label: 'Gateway', href: 'gateway.html' },
+{ key: 'contact', label: 'Contact', href: 'contact.html' }
+];
+return {
+links: items.map((i) => ({
+...i,
+style: base + (i.key === current
+? 'color: #ecebe2; box-shadow: inset 0 -2px 0 #7fc4c2'
+: 'color: #bfc5bb')
+}))
+};
+}
+}
+</script>
+<noscript><p style="padding:24px;font:16px system-ui;color:#ecebe2">This preview site needs JavaScript turned on.</p></noscript>
+</body>
+</html>
