@@ -128,7 +128,11 @@ def main():
     for src, (dst, title, desc) in PAGES.items():
         with open(os.path.join(CANVAS, src), encoding="utf-8") as f:
             build_page(dst, title, desc, parse(f.read(), src))
-    base = os.environ.get("SITE_BASE", "")
+    # The 404 page is served at any missing path, so it needs an absolute base.
+    # Set SITE_BASE if the site moves (for example to a custom domain: "/").
+    base = os.environ.get("SITE_BASE", "/legacy-global-test-site/")
+    if not base.startswith("/"):
+        raise SystemExit("SITE_BASE must start with '/'. Got %r; on Git Bash set MSYS_NO_PATHCONV=1." % base)
     build_page("404.html", "Page not found | Legacy Global", "Page not found.", parse(NOT_FOUND, "404"), base)
 
 

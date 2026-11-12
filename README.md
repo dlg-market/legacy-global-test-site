@@ -29,8 +29,11 @@ is no build server or framework; the pages also open straight from disk.
 2. Rebuild:
 
    ```
-   SITE_BASE=/legacy-global-test-site/ python -I tools/sync_from_canvas.py
+   python -I tools/sync_from_canvas.py
    ```
+
+   The 404 page assumes the site lives at `/legacy-global-test-site/`. If it
+   moves (for example to a custom domain), set `SITE_BASE=/` before building.
 
 3. Commit and push. GitHub Pages republishes within a minute or two.
 
